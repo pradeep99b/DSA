@@ -1,0 +1,32 @@
+public class PermutationWithSpace{
+
+	
+	static void func(String input, String output,int i){
+
+
+		if(output.equals("")){
+			System.out.println(output);
+			return ; 
+		}
+
+
+		String output1 = output + "_"+ s.charAt(i) ;
+		String output2 = output + s.charAt(i);
+		
+	
+		func(input, output1,i++);
+		func(input, output2,i++);
+	
+
+
+	}
+
+	public static void main(String[] args){
+
+
+		System.out.println("abc");
+		func("abc","a",1);
+
+	}
+
+}

@@ -1,0 +1,117 @@
+public class ReverseStack{
+
+
+
+	int capacity = 10;
+	int Stack[] = new int[capacity];
+	int size = 0;
+
+
+	void push(int data){
+
+
+		if(size == capacity){
+
+
+			System.out.print("Stack Overflow");
+			return ;
+		}
+
+		Stack[size] = data;
+		size++;
+	
+	}
+
+
+	int pop(){
+
+
+		if(size==0){
+
+			System.out.print("Stack Empty");
+			return 	-1;
+		}
+
+
+		int top = Stack[size-1];
+		size--;
+		return top;
+
+	}
+
+
+	void display(){
+
+
+		if(size==0){
+			System.out.print("Stack is Empty");
+			return ;
+		}
+
+		for(int i=0; i<size; i++)
+			System.out.print(Stack[i]+" ");
+
+		System.out.println();
+
+
+	}
+
+
+	void Reverse(){
+
+
+
+		if(size>1){
+
+
+			int top = pop();
+			Reverse();
+			InsertDelete(top);
+
+
+		}
+
+	}
+
+
+	void InsertDelete(int data){
+
+
+		if(size==0){
+
+			push(data);
+			return;
+		}
+
+		 
+
+		int top = pop();
+		InsertDelete(data);
+		push(top);
+		
+
+
+	}
+
+
+	public static void main(String[] args){
+
+
+
+		ReverseStack rs = new ReverseStack();
+		
+		rs.push(3);
+		rs.push(1);
+		rs.push(9);
+		rs.push(3);
+
+
+		rs.display();
+		rs.pop();
+		rs.display();
+		rs.Reverse();
+		rs.display();
+	}
+
+}
+		

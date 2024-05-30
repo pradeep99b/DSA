@@ -1,0 +1,25 @@
+public class Fn{
+
+
+	static int fun(int n, int i, int res){
+
+		
+		if(n==1)
+			return 1;
+
+		
+		return 
+
+		
+
+
+
+	}
+
+	public static void main(String[] args){
+
+
+		System.out.print(fun(4,1,1));
+	}
+
+}

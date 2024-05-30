@@ -1,0 +1,49 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+class ArithmeticException{
+
+	string Message;
+	int LineNumber;	
+	string FunctionName;
+	string FileName;
+
+	public:
+	ArithmeticException(string Message, int LineNumber, string unctionName, string filename): Message(Message)
+
+
+	void PrintStackTrace(){
+
+		cout<<this->Message
+
+};
+
+int main(){
+
+	int Num1=10;
+	int Num2=0;
+
+	try{
+		if(Num2==0){
+
+			throw ArithmeticException("Divide by zero Operation",__Line__,__FUNCTION__,__FILE__)
+	
+		}
+
+		int Res =  Num1/Num2;
+		cout<<"Res:"<<Res<<endl;
+
+	}
+
+	catch(ArithmeticException &ex){
+
+		cout<<"Exception Occured:"<<endl;
+		ex.PrintStackTrace();
+	}
+
+
+	cout<<"Resr of the program"<<endl;
+	return 0;
+
+}
