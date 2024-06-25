@@ -1,0 +1,5 @@
+transient data
+persistent data
+Detach data
+Persistent   
+

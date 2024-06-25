@@ -1,0 +1,39 @@
+MySQL- normalization triggers 
+
+// WPT - JavaScript Node React
+
+CCEE - MCQ - Advanced Java
+
+
+Advance Java
+
+Crud operation spring boot
+
+
+
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+<groupId>com.cdac</groupId>
+<artifactId>HibernateWebap</artifactId>
+<version>0.0.1-SNAPSHOT</version>
+<packaging>war</packaging>
+<dependencies>
+<dependency>
+<groupId>com.cdac</groupId>
+<artifactId>HibernateDemo</artifactId>
+<version>0.0.1-SNAPSHOT</version>
+</dependency>
+</dependencies>
+<build>
+<plugins>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-war-plugin</artifactId>
+<version>3.3.2</version> <!-- Use the latest version -->
+</plugin>
+</plugins>
+</build>
+</project>
+
+
